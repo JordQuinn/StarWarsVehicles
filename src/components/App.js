@@ -76,7 +76,7 @@ handleFormSubmit = (event) => {
     let vehicles = array.map(vehicles => (
     <div key = {vehicles.name}>
       <div className = "wrapper">
-        <div id = "card">
+        <div id = "card" style = {{width: "18rem"}}>
           <h4>Vehicle: {vehicles.name} </h4>
           <h5>Model: {vehicles.model}</h5>
           <div>
@@ -107,13 +107,13 @@ handleFormSubmit = (event) => {
          */}
          <main>
           <section>
-            <div className = "jumbotron">
+            <div className = "jumbotron" style = {{textAlign: 'left'}}>
               <h1> Star Wars </h1> <br></br>
               <hr></hr>
               <h2> The Vehicles of Star Wars </h2>
             </div>{//jumbotron end}
           }
-              <div className = 'container'>
+              <div className = 'container' style = {{TextAlign: 'center'}}>
                 <div className = 'whatsname'>
                   <h2> What is your name, pilot?</h2>
                   <form onSubmit = {this.handleFormSubmit}>
